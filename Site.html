@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <style>
+      
+       section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding-top: 100px;
+      }
+
+       
+        .centered {
+        max-width: 100%; 
+        width: 750px;
+        display: block;
+        margin: 0 auto;
+        height: auto; 
+        text-align: center;
+    }
+    
+    .content-section {
+        text-align: center;
+        margin-bottom: 30px;
+        
+    }
+    .bej {
+        background: #C49E85;
+      }
+      
+      
+      .black {
+        background: #000000;
+        overflow: hidden;
+      }
+
+      .dark {
+        background: #151515;
+      }
+      .blue {
+        background: #14213D;
+      }
+      .red {
+        background: #a63d40;
+      }
+      .pink {
+        background: #F7CACA;
+      }
+
+
+
+       .wave {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+      }
+
+      .wave svg {
+        position: relative;
+        display: block;
+        width: calc(103% + 1.3px);
+        height: 262px;
+      }
+
+      .wave .shape-fill {
+        fill: hsl(240, 3%, 6%);
+      }
+
+
+     .spacer {
+        aspect-ratio: 960/300;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .layer1 {
+        background-image: url('./Lwave.svg');
+      }
+      .layer2 {
+        background-image: url('./steps.svg');
+      }
+      .layer3{
+        background-image: url('./Lwave2.svg');
+      }
+      .layer4{
+        background-image: url('./Lwave3.svg');
+      }
+      .layer5{
+        background-image: url('./Lwave4.svg');
+      }
+
+
+      .flip {
+        transform: rotate(180deg);
+      }
+
+      .blob-motion {
+        position: absolute;
+        transform: translateY(-20%);
+        z-index: 0;
+      }
+
+      .blob-content {
+        z-index: 1;
+      }
+
+      .blobs {
+        width: 100%;
+        background: url('./blobs.svg') no-repeat bottom / cover;
+      }
+      .blackText{
+      color:black;
+      }
+     
+
+    </style>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const topOffset = section.offsetTop;
+                window.scrollTo({
+                    top: topOffset,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        </script>
+            
+  
+   <title>Toyota 86</title>
+    
+    
+</head>
+<body>
+<section class="red">
+<div class="wrapper fade-in">
+        <div class="content-container">
+            <h2>Toyota Corolla 86!</h2>
+            <center>
+            <img src="Toyota.webp" alt="86">
+            </center>
+        </div>
+      <div class="wave">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+  
+        
+        <div class="spacer layer1"></div>
+
+</div>
+     <div class="navigation" id="navigation">
+        <button onclick="scrollToSection('intro')">Introducere</button>
+        <button onclick="scrollToSection('performanta-design')">Performanțe și Design</button>
+        <button onclick="scrollToSection('design-interior')">Design Exterior și Interior</button>
+        <button onclick="scrollToSection('istorie-poveste')">Istorie și Poveste</button>
+        <button onclick="scrollToSection('comunitate-enthusiast')">Comunitatea</button>
+    </div>
+  
+   
+        <div id="intro">
+        <section class="dark">
+            <h2>Introducere</h2>
+             <img class="centered" src="https://media.giphy.com/media/uZ7ujnSoXlt28/giphy.gif" alt="Toyota GIF">
+            <p>Toyota 86 este o mașină sport compactă dezvoltată în colaborare cu Subaru și comercializată sub diferite nume în diverse regiuni, inclusiv Subaru BRZ și Scion FR-S. Lansată inițial în 2012, Toyota 86 a fost concepută pentru a oferi o experiență de conducere pură și distractivă, inspirată de mașinile sportive clasice.</p>
+        </section>      
+        </div>
+        <div class="spacer layer2"></div>
+
+               <div id="performanta-design">
+               <section class="bej">
+            <h2>Performanțe și Design</h2>
+                    <h3>Motor Boxer</h3>
+                    <p>Toyota 86 este echipată cu un motor boxer cu patru cilindri în linie, având o capacitate de 2.4 litri. Această configurație asigură un centru de greutate scăzut, contribuind la manevrabilitatea excelentă a mașinii.</p>
+                    <img class="centered" src="https://car-images.bauersecure.com/wp-images/165503/91-toyota-corolla-gt-engine-bay.jpg" >
+                    <h3>Tracțiune pe Spate</h3>
+                    <p>Unul dintre aspectele distincte ale Toyota 86 este tracțiunea sa pe spate. Această configurație oferă o experiență de conducere agilă și permite șoferului să se bucure de derapaje controlate, contribuind la popularitatea mașinii în comunitatea pasionaților de drifting.</p>
+                    <img class="centered" src="https://live.staticflickr.com/1393/3267720934_d7b3a96144_b.jpg" >
+                    <h3>Suspensie Sport</h3>
+                    <p>Mașina beneficiază de o suspensie sport care maximizează aderența și manevrabilitatea în viraje, oferind un răspuns precis la comenzi.</p>
+                    <h3>Transmisie Manuală</h3>
+                    <p>Toyota 86 este adesea disponibilă cu o transmisie manuală, accentuând conexiunea directă între șofer și mașină.</p>
+                    </section>
+                    </div>
+        <div class="spacer layer3"></div> 
+        
+        <div id="design-interior">
+          <section class="black">
+                    <h2>Design Exterior și Interior</h2>
+                    <h3>Design Sportiv</h3>
+                    <p>Aspectul exterior al Toyota 86 este caracterizat de linii sportive și un profil aerodinamic. Grila distinctivă, spoiler-ul și aripile laterale contribuie la estetica sa agresivă.</p>
+                    <img class="centered" src="https://carnewschina.com/wp-content/uploads/2015/05/fb-show-china-japan-2.jpg" >
+                    <h3>Interior Centrat pe Șofer</h3>
+                    <p>Cabina Toyota 86 este proiectată cu accent pe șofer, punând la dispoziție un volan sport, un schimbător de viteze bine plasat și instrumente de bord intuitive.</p>
+                    <img class="centered" src="https://www.banpei.net/files/autoart_initial_d_ae86_v1_1-18_interior.jpg" >
+                    <h3>Scaune Sportive</h3>
+                    <p>Scaunele sportive asigură confort și susținere în timpul conducerii sportive și a derapajelor.</p>        
+                    <img class="centered" src="https://i.pinimg.com/736x/70/6f/c0/706fc04b5ea3ee894fd2fb691361db57.jpg" >
+                    </div>
+           </section>
+            <div class="spacer layer4"></div>
+        <div id="istorie-poveste">
+        <section class="pink">
+            <h2 class="blackText">Istorie și Poveste</h2>
+            <img class="centered"  src="https://i.pinimg.com/originals/5a/10/ab/5a10aba751b224bacff2bb3494af512e.gif" alt="Toyota GIF">
+
+            <p class="blackText"><strong>Inspirată de AE86:</strong> Numele Toyota 86 este un omagiu adus modelului AE86, o mașină sport iconică lansată în anii '80. Modelul original a câștigat popularitate în competițiile de curse de munte și drifting, devenind unul dintre cele mai iubite modele din istoria mașinilor sport compacte.</p>
+            <p class="blackText"><strong>Animeul "Initial D":</strong> Toyota 86 a devenit cunoscută și în rândul fanilor anime-ului "Initial D," unde personajul Takumi Fujiwara conduce o Toyota 86, contribuind la creșterea notorietății mașinii în cultura pop.</p>
+             <img class="centered"  src="https://64.media.tumblr.com/b73696389e12cf5e81f5c4dca526f33b/tumblr_owo3tdn4aM1tdrpkqo1_400.gif">
+       </section>
+        </div>
+          <div class="spacer layer5"></div>
+        <div id="comunitate-enthusiast">
+        <section class="dark">
+            <h2>Comunitatea</h2>
+            <p>Toyota 86 a fost adoptată de o comunitate pasionată de entuziaști și de șoferi care apreciază experiența autentică de conducere sportivă și capacitatea de personalizare a mașinii.</p>
+       
+        <h3>Forumuri și Platforme Online:</h3>
+        <p><strong><a href="https://www.ae86drivingclub.com.au/" target="_blank">AE86 Driving Club:</a></strong> AE86 Driving Club este un forum dedicat pasionaților de Toyota AE86, oferind spații de discuții, ghiduri de întreținere și secțiuni pentru a-ți prezenta mașina.</p>
+        <p><strong><a href="http://www.club4ag.com/" target="_blank">Club4AG:</a></strong> Club4AG este o comunitate online care acoperă o gamă largă de mașini Toyota, dar cu un accent special pe modelele AE86. Aici poți găsi informații utile, sfaturi și resurse.</p>
+
+        <h3>Resurse Online:</h3>
+        <p><strong><a href="https://www.aeu86.org/" target="_blank">AE86 Tech:</a></strong> Pentru informații tehnice și tutoriale, există resurse online precum AE86 Tech.</p>
+        <p><strong>Social Media:</strong> Platforme precum Instagram, Facebook și YouTube sunt pline de comunități de AE86. Hashtag-urile precum #AE86 și #Hachiroku pot fi folosite pentru a găsi conținut și pentru a conecta cu alți entuziaști.</p>
+
+        <h3>Magazine și Comercianți:</h3>
+        <p><strong><a href="https://www.rhdjapan.com/" target="_blank">RHDJapan:</a></strong> RHDJapan și alți comercianți specializați în piese auto japoneze pot fi surse excelente pentru piese de schimb și upgrade-uri pentru modelul AE86.</p>
+        <p><strong>Reviste Auto Japoneze:</strong> Reviste auto precum "Option" și "Drift Tengoku" oferă frecvent conținut relevant pentru posesorii de AE86 și entuziaștii de drift.</p>
+<center>
+         <iframe width="750" muted height="400"  src="https://www.youtube.com/embed/tqiZL1tBn2c?si=OLdyy4tm_xgMCsAE&autoplay=1&controls=0&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+<h2>Poze:</h2>
+<div class="drag-text">trage cu mouse-ul ---></div>
+</section>
+<center>
+<div id="image-container">
+<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+  <img class="image" src="https://images.unsplash.com/photo-1657726565620-1fa7b3d63c90?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+  <img class="image" src="https://images.unsplash.com/photo-1659441884500-408295f10d99?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+  <img class="image" src="https://images.unsplash.com/photo-1662663771011-b768c1f4fb9a?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+  <img class="image" src="https://images.unsplash.com/photo-1662663770958-4099ec62b7e8?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+  <img class="image" src="https://images.unsplash.com/photo-1558032449-2abb55927f5a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+  <img class="image" src="https://images.unsplash.com/photo-1571775145637-2a816b020f4e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+  <img class="image" src="https://images.unsplash.com/photo-1659441884675-a6734147433c?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+  <img class="image" src="https://images.unsplash.com/photo-1689594016155-3f912af12e59?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+
+</div>
+</div>
+</center>
+
+</body>
+<script src="Java.js"> </script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</html>
